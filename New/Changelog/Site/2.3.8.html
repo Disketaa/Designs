@@ -1,17 +1,19 @@
 <!--BODY-->
-<img style="display: block; margin-left: auto; margin-right: auto; "src="https://github.com/Disketaa/Designs/blob/main/New/Changelog/News.png?raw=true">
+<img src="materials/changelog/2.3.png">
 <div class="square">NEWS</div>
 <h1>AMETHYST</h1>
 <!--VERSION-->
 <h2>2.3.8</h2>
 
 <!--MODS-->
+<div class="changelog">
 <p>MODS</p>
+<p1>UPDATED</p1>
 <ul>
-    <li><span>Redstonebits</span> updated to 1.8.1</li>
-    <li><span>Lithium</span> updated to 0.7.9</li>
-    <li><span>Debugify</span> updated 1.11.0</li>
-</ul><br>
+    <li><span>Redstonebits</span></li>
+    <li><span>Lithium</span></li>
+    <li><span>Debugify</span></li>
+</ul>
 
 <!--CHANGES-->
 <p>CHANGES</p>
@@ -23,7 +25,7 @@
     <li>Tweaked textures for Nether Bricks, Deepslate, Lightning Rods Tnt and Water</li>
     <li>Tweaked textures for Drowned, Weapon-smith Zombie, Cow and Leather Horse Armor</li>
     <li>Removed warning-text on shield parrying enchantments (Items will still be deleted)</li>
-</ul><br>
+</ul>
 
 <!--FIXES-->
 <p>FIXES</p>
@@ -31,7 +33,7 @@
     <li>Missing <span>Redstonebits</span> textures</li>
     <li>Invisible rain particles</li>
 </ul>
-<br><br><br><br><br>
+</div>
 
 
 
@@ -52,7 +54,6 @@
 
 .square {
     position: absolute;
-    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -60,54 +61,80 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    margin-top: -5px;
 
-    width: 70px;
-    height: 30px;
+    max-width: 100px;
+    max-height: 50px;
+    width: 5vw;
+    height: 2.75vw;
     background-color: rgb(180, 99, 231);
 
     font-family: 'Noto Sans';
-    font-size: 16px;
+    font-size: min(max(1vw), 22px);
     color: white;
     text-align: center;
 }
 
+.changelog {
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    user-select: none;
+}
+
 h1 {
     font-family: 'Noto Sans';
-    font-size: 36px;
+    font-size: 1.5vw;
     font-weight: bold;
     text-align: center;
+    margin: 2vw;
+    padding-top: 2vw;
 }
 
 h2 {
     font-family: 'Noto Sans';
-    font-size: 18px;
+    font-size: 1vw;
     font-weight: bold;
-    color: rgb(180, 99, 231);
+    color: #b463e7;
     text-align: center;
-    margin-top: -28px;
-    padding-bottom: 28px;
+    margin-top: -2.5vw;
+    padding-bottom: 1vw;
 }
 
 p {
     font-family: 'Noto Sans';
-    font-size: 22px;
+    font-size: 1vw;
     font-weight: bold;
-    margin-left: 280px;
+    margin-bottom: 0%;
+}
+
+p1 {
+    font-family: 'Noto Sans';
+    font-size: 0.5vw;
+    font-weight: bold;
+    color: #9a97b9;
+    padding-left: 0.6vw;
 }
 
 span {
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
-    font-size: 14px;
-    color: rgb(180, 99, 231);
+    font-size: 0.75vw;
+    color: #b463e7;
 }
 
 ul {
     font-family: Helvetica;
-    font-size: 14px;
-    margin-left: 280px;
-    margin-top: -16px;
-    line-height: 1.5;
+    font-size: 0.75vw;
+    line-height: 1.25vw;
+    list-style-type: square;
+    margin-top: auto;
+    padding-bottom: 2vw;
 }
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
